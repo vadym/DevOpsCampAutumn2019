@@ -1,5 +1,5 @@
 FROM ubuntu
-MAINTAINER Pavlo Lucik (pavel.lucik@gmail.com)
+LABEL maintainer="Pavlo Lucik pavel.lucik@gmail.com"
 RUN apt-get update
 RUN apt-get install -y nginx
 COPY index.html /var/www/html/index.nginx-debian.html
