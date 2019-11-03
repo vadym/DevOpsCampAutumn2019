@@ -1,0 +1,5 @@
+FROM krukmaksym/devopsautumncamp2019-alpine:1.2
+
+RUN apk update
+RUN apk add mariadb
+RUN mysqld -V
