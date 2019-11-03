@@ -1,0 +1,7 @@
+FROM krukmaksym/devopsautumncamp2019-alpine:1.1
+
+RUN apk update
+RUN apk add npm nodejs vim
+RUN npm -v
+RUN node -v
+RUN vim --version
