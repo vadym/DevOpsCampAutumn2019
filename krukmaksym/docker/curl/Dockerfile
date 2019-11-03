@@ -1,3 +1,5 @@
-FROM centos:lates krukmaksym-centos
+FROM centos
 
-RUN yum install curl
+RUN yum update -y 
+RUN yum install -y curl
+RUN curl --version
