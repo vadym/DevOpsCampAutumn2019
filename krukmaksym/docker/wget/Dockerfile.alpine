@@ -1,0 +1,5 @@
+FROM alpine
+
+RUN apk add wget
+RUN apk add bash
+RUN bash && wget --version
