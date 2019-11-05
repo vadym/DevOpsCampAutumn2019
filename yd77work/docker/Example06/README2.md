@@ -1,6 +1,1 @@
-✓ docker build \
---build-arg
-BUILD_NUMBER=${BUILD_NUMBER} \
---build-arg
-JOB_NAME=${JOB_NAME} \
-.
+docker build --no-cache=true --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') -t mytool:latest .

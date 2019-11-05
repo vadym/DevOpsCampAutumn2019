@@ -1,5 +1,5 @@
 FROM busybox as builder
-RUN adduser dummy -u 1234 –S
+RUN adduser dummy -u 1234 -S
 USER dummy
 FROM builder
 RUN id

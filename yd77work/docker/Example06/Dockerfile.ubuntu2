@@ -1,5 +1,8 @@
-ARG BUILD_NUMBER
-ARG JOB_NAME
-LABEL
-build_number="${BUILD_NUMBER}“
-LABEL job_name="${JOB_NAME}“
+#ARG BUILD_NUMBER
+#ARG JOB_NAME
+#LABEL build_number=${BUILD_NUMBER}
+#LABEL job_name=${JOB_NAME}
+#
+FROM openjdk:jre-alpine
+ARG BUILD_DATE
+LABEL org.label-schema.build-date=$BUILD_DATE
