@@ -1,5 +1,6 @@
 FROM python:3.6
 WORKDIR /whataboutfilm/
+VOLUME ["/tmp/film-getter/"]
 COPY requirments.txt ./
 COPY whataboutfilm.py ./
 RUN mkdir /tmp/film_getter/
