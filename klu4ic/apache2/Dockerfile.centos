@@ -1,0 +1,17 @@
+
+FROM centos:latest
+
+LABEL maintainer=“DevDevchenko“
+
+RUN yum install -y httpd 
+
+RUN touch /var/www/index.html
+RUN echo "hello world" > /var/www/html/index.html
+
+#ADD index.html /var/wwww/html/index.html
+
+CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
+
+EXPOSE 80
+
+
