@@ -1,0 +1,20 @@
+
+FROM alpine:latest
+
+LABEL maintainer=“DevDevchenko“
+
+RUN apk add apache2 
+
+#RUN touch /var/www/index.html
+#RUN echo "hello world" > /var/www/html/index.html
+
+#ADD index.html /var/wwww/html/index.html
+
+#RUN mkdir -p /var/run/apache2
+
+
+CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
+
+EXPOSE 80
+
+
