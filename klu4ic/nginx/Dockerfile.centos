@@ -1,0 +1,19 @@
+
+FROM centos:latest
+
+LABEL maintainer=“DevDevchenko“
+
+RUN yum install -y yum-utils
+
+COPY nginx.repo /etc/yum.repos.d/nginx.repo
+COPY index.html /tmp/
+
+RUN yum install -y nginx
+
+COPY index.html /usr/share/nginx/html/index.html
+
+CMD ["nginx", "-g daemon off;"]
+
+EXPOSE 80
+
+
