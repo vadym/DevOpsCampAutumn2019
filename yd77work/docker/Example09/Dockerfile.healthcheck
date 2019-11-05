@@ -1,0 +1,4 @@
+...
+HEALTHCHECK --interval=5m --
+timeout=3s CMD curl -sf
+http://localhost/ || exit

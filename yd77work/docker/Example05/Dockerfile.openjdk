@@ -1,0 +1,5 @@
+FROM openjdk:8
+ENV PORT=8080
+EXPOSE 8080
+COPY wiremock /wiremock
+ENTRYPOINT ["/wiremock/bin/startServer.sh"]

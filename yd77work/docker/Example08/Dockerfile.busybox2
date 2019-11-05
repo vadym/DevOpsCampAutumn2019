@@ -1,0 +1,8 @@
+FROM busybox as builder
+RUN adduser dummy -u 1234 –S
+USER dummy
+ONBUILD USER root
+ONBUILD RUN echo "Some settings will
+be changed for build matter"
+FROM builder
+RUN id
