@@ -8,6 +8,10 @@ By default it scans server scanme.nmap.org
 ```
 docker build -t nmap:1.0 .
 ```
+build image based on alpine or ubuntu
+```
+docker build -t nmap:1.0 -f << DockerfileAlpine | DockerfileUbuntu >>
+```
 
 ### Run
 to use by default
