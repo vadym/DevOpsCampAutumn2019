@@ -1,11 +1,5 @@
-✓ docker inspect --format='{{json
-.State.Health}}' << container_name >>
-Health statuses: starting, healthy,
-unhealthy
+Exercise #1
 
-The options that can appear before CMD
-are:
---interval=DURATION(default:30s)
---timeout=DURATION(default:30s)
---start-period=DURATION(default:0s)
---retries=N(default:3)
+Dockerfile #9 - Health Check
+Image: https://hub.docker.com/repository/docker/yd77work/devopscampautumn2019-example9
+Usage: docker build -t yd77work/devopscampautumn2019-example9 -f Dockerfile.healthcheck .
