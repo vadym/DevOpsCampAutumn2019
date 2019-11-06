@@ -6,7 +6,7 @@ When you access to port it prints "Hello world"<br>
 
 ### Build
 ```
-docker build -t myflask
+docker build -t myflask .
 ```
 
 ### Run
