@@ -1,5 +1,6 @@
 Exercise #1
 
+
 Dockerfile #1 - A Minimal Application
 
 Image: https://hub.docker.com/repository/docker/yd77work/devopscampautumn2019-example1
