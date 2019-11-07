@@ -1,0 +1,9 @@
+Repository for very simple images running /bin/cat /etc/passwd
+
+Run with:
+
+docker run --rm pavlolucik/devopscampautumn2019-01verysimpleimage:busybox-latest
+
+docker run --rm pavlolucik/devopscampautumn2019-01verysimpleimage:alpine-latest
+
+docker run --rm pavlolucik/devopscampautumn2019-01verysimpleimage:alpine-3.7

@@ -1,0 +1,10 @@
+This is another approach to pull code inside image and build JAR from our GraduationWork.
+Resulting image is smaller compared to my previous example (04graduationWorkBuildJar)
+
+Run with:
+
+docker run --rm -d -p 8080:8080 pavlolucik/devopscampautumn2019-05buildsamewithmaven:maven-latest
+
+docker run --rm -d -p 8080:8080 pavlolucik/devopscampautumn2019-05buildsamewithmaven:maven-8slim
+
+docker run --rm -d -p 8080:8080 pavlolucik/devopscampautumn2019-05buildsamewithmaven:maven-11slim
