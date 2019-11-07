@@ -1,3 +1,5 @@
+Repository for very simple images running /bin/cat /etc/passwd
+
 Run with:
 
 docker run --rm pavlolucik/devopscampautumn2019-01verysimpleimage:busybox-latest

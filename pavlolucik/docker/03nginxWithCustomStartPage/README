@@ -1,3 +1,5 @@
+Repository for different variations of nginx webserver with custom starting page
+
 Run with:
 
 docker run -d --rm -p 80:80 pavlolucik/devopscampautumn2019-03nginxwithcustomstartpage:ubuntu-latest
