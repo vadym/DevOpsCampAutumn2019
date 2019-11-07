@@ -1,0 +1,5 @@
+docker run --rm -d -p 8080:8080 pavlolucik/devopscampautumn2019-04graduationworkbuildjar:ubuntu
+
+docker run --rm -d -p 8080:8080 pavlolucik/devopscampautumn2019-04graduationworkbuildjar:debian
+
+docker run --rm -d -p 8080:8080 pavlolucik/devopscampautumn2019-04graduationworkbuildjar:centos

@@ -1,6 +1,7 @@
-FROM maven:latest
+FROM maven:3-jdk-8-slim
 LABEL maintainer="Pavlo Lucik pavel.lucik@gmail.com"
 COPY . /
 WORKDIR gw-spring-boot/spring-boot-tests/spring-boot-smoke-tests/spring-boot-smoke-test-web-ui/
 RUN mvn clean install
 ENTRYPOINT ["java","-jar","/gw-spring-boot/spring-boot-tests/spring-boot-smoke-tests/spring-boot-smoke-test-web-ui/target/spring-boot-smoke-test-web-ui-2.2.0.BUILD-SNAPSHOT.jar"]
+

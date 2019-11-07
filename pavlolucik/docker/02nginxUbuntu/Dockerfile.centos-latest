@@ -1,6 +1,5 @@
-FROM ubuntu:latest
+FROM centos:latest
 LABEL maintainer="Pavlo Lucik pavel.lucik@gmail.com"
-RUN apt-get update
-RUN apt-get install -y nginx
+RUN yum -y install nginx
 ENTRYPOINT ["/usr/sbin/nginx","-g","daemon off;"]
 EXPOSE 80

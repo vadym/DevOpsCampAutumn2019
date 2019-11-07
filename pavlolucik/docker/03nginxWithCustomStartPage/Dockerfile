@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:latest
 LABEL maintainer="Pavlo Lucik pavel.lucik@gmail.com"
 RUN apt-get update
 RUN apt-get install -y nginx

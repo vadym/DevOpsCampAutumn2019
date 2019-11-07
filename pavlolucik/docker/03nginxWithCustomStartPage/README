@@ -1,0 +1,7 @@
+Run with:
+
+docker run -d --rm -p 80:80 pavlolucik/devopscampautumn2019-03nginxwithcustomstartpage:ubuntu-latest
+
+docker run -d --rm -p 80:80 pavlolucik/devopscampautumn2019-03nginxwithcustomstartpage:debian-latest
+
+docker run -d --rm -p 80:80 pavlolucik/devopscampautumn2019-03nginxwithcustomstartpage:centos-latest
