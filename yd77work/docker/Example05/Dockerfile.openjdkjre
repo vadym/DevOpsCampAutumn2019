@@ -1,0 +1,10 @@
+#FROM openjdk:8-jre
+#ADD HelloWorld.java .
+#EXPOSE 4040
+#ENTRYPOINT ["java", "-jar"]
+#CMD ["java","HelloWorld"]
+#
+FROM java:8
+ADD HelloWorld.java .
+RUN javac HelloWorld.java
+CMD ["java", "HelloWorld"]
