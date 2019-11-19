@@ -29,7 +29,3 @@ node() {
         archiveArtifacts artifacts: "**/target/*.jar", fingerprint: true
     }
 }
-input ("Please approved deploy to ")
-node() {
-    
-}    
