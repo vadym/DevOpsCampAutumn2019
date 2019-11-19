@@ -1,4 +1,19 @@
 properties([
+    buildDiscarder(
+        logRotator(
+            artifactDaysToKeepStr: '14',
+            artifactNumToKeepStr: '5',
+            daysToKeepStr: '14',
+            numToKeepStr: '10'
+        )
+    ),
+    parameters([
+        choice(
+            name: 'BRANCH',
+            choices: 'master\nstable\nrelease',
+            description: 'Choise master, stable, release'
+        )
+    ]),
     pipelineTriggers([
         GenericTrigger(
             causeString: 'Push to master', 
