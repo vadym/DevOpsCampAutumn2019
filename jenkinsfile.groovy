@@ -1,4 +1,6 @@
-
+properties([
+pipelineTriggers([])
+])
 node() {
     stage("clean src directory") {
         deleteDir()
