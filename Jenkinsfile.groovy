@@ -22,7 +22,7 @@ node() {
               env && \
               mvn clean install -X"
 
-        sh "pwd && ls -al && mvn clean install -f $workDir/spring-boot/spring-boot-samples/spring-boot-sample-web-ui/pom.xml -X"
+        //sh "pwd && ls -al && mvn clean install -f $workDir/spring-boot/spring-boot-samples/spring-boot-sample-web-ui/pom.xml -X"
     }
     
     stage("save artefact"){
