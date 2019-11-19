@@ -18,6 +18,10 @@ properties([
     ])
 ])
 node() {
+    ansiColor('xterm') {
+        printlnGreen "ttexttt"
+    }    
+    
     stage("clean src directory") {
         deleteDir()
         }
@@ -44,4 +48,7 @@ node() {
     stage("save artefact"){
         archiveArtifacts artifacts: "**/target/*.jar", fingerprint: true
     }
+}
+def printlnGreen(text) {
+    println "\033[1;4;37;42m$text\033[0m"
 }
