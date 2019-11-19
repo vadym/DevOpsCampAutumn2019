@@ -1,6 +1,5 @@
 
 node() {
-/*
     stage("clean src directory") {
         deleteDir()
         }
@@ -10,7 +9,6 @@ node() {
             sh 'git clone https://github.com/djholms/spring-boot.git -b 2.1.x'
         
     }
-*/
     stage("get work directory and build"){
         def workDir = sh(returnStdout: true, script: "pwd").trim()
         sh   "cd $workDir && \
