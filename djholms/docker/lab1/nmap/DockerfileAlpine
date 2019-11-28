@@ -1,0 +1,4 @@
+FROM alpine
+RUN apk add  nmap 
+ENTRYPOINT ["nmap"]
+CMD ["scanme.nmap.org"]

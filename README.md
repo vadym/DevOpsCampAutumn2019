@@ -1,1 +1,0 @@
-# DevOpsCampAutumn2019
